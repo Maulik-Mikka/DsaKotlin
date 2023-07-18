@@ -8,11 +8,10 @@ fun main() {
 fun defangIPaddr(address: String): String {
     var defangIp = ""
     for (i in address.indices) {
-        if (address[i].equals('.')) {
+        if (address[i] == '.') {
             defangIp += "[.]"
         } else {
-            defangIp += address[i]
-        }
+            defangIp += address[i]        }
     }
 
     return defangIp
